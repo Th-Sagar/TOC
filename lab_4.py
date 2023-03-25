@@ -12,7 +12,7 @@ def emails(email):
     print("Valid Email") if matches else print("Invalid Email")
 
 def ips(ip):
-    patt= r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$'
+    patt= r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1}$'
     matches = re.match(patt,ip)
     print("Valid IP") if matches else print("Invalid IP")
 
